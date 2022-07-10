@@ -1,14 +1,17 @@
-## Install [cobra](https://github.com/spf13/cobra/tree/master/cobra)
+## Install [cobra-cli](https://github.com/spf13/cobra/tree/master/cobra)
 ```bash
-go get -u github.com/spf13/cobra/cobra
+go install github.com/spf13/cobra-cli@latest
 ```
 
 ## Init cobra project
 ```bash
-cobra init --pkg-name github.com/[GITHUB_USER_NAME]/joker
+cd $GOPATH/src/github/
+mkdir joker
+cd joker
+cobra-cli init
 
 Your Cobra application is ready at
-/Users/xxx/go/src/github.com/[GITHUB_USER_NAME]/joker
+/Users/xxx/go/src/github/[GITHUB_USER_NAME]/joker
 
  tree .
 .
